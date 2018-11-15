@@ -55,7 +55,7 @@ func (lof *Lof) computeCoreDistances(cache *LofCache, im *InclusionMask) {
 		}
 		numNeighbors := lof.Neighbors.KNearest(im, uint64(i), cache.Neighborhoods[i])
 		cache.Neighborhoods[i] = cache.Neighborhoods[i][:numNeighbors]
-		furthest := cache.Neighborhoods[i][lof.K-1]
+		furthest := cache.Neighborhoods[i][numNeighbors-1]
 		cache.CoreDistance[i] = lof.Db.Employees[i].Distance(lof.Db.Employees[furthest])
 	}
 }
