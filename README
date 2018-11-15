@@ -1,0 +1,5 @@
+This is a highly efficient re-implementation of the "Differential Privacy outlier on Real Dataset" experiment.
+
+See https://github.com/masi-sh/DP_out_Sum for more information.
+
+Note: This code is extremely specific gradware. It is not ready for any sort of production.
